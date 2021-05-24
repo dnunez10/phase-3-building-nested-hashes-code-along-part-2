@@ -15,15 +15,15 @@ def update_status
          :heroine => {name: "Juliet", age: "15", status: "alive"},
          :heroine_friends => [
          {name: "Steven", age: "30", attitude: "confused"},
-         {name: "Nurse", age: "44", attitude: "worried"}
+         {name: "Nurse", age: "44", attitude: "worried"} 
          ]
       }
    }
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
-
-
+epic_tragedy[:montague][:hero][:status] = "dead"
+epic_tragedy[:capulet][:heroine][:status] = "dead"
 
 
   # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
@@ -59,7 +59,14 @@ def add_characters
    #   - The first hash should have the :name key set to "Prince Escalus" 
    #   - The second hash should have the :name key set to "Apothecary" 
    # Code your solution here:
-
+epic_tragedy[:additional_characters] = [
+   {name: "Prince Escalus"},
+   {name: "Apothecary"}
+]
+# prince = {name: "Prince Escalus"}
+# apothecary = {name: "Apothecary"}
+# epic_tragedy[:additional_characters] << prince
+# epic_tragedy[:additional_characters] << apothecary
 
 
 
